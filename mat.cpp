@@ -1,6 +1,6 @@
-#include <mat.hpp>
+#include "mat.hpp"
 
-frac::frac(int u, int b) {
-    this.u = u;
-    this.b = b;
+frac::frac(int a, int b) {
+    this->a = a;
+    this->b = b;
 }
