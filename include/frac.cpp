@@ -5,11 +5,6 @@ std::ostream & operator<<(std::ostream &os, const frac &that) {
     return os;
 }
 
-frac::frac(const int64_t &x) {
-    a = x;
-    b = 1;
-}
-
 frac::frac(const int64_t &x, const uint64_t &y) {
     a = x / gcd(abs(x), y);
     b = y / gcd(abs(x), y);
