@@ -1,10 +1,9 @@
-#include <vector>
 #include <iostream>
 
 class frac {
 private:
-    int64_t m;
-    uint64_t n;
+    int64_t a;
+    uint64_t b;
 public:
     friend std::ostream & operator<<(std::ostream &os, const frac &that);
     frac(const int64_t &);
@@ -18,8 +17,3 @@ public:
     const frac inv()const;
     const frac operator/(const frac &)const;
 };
-class matrix {
-public:
-    std::vector<std::vector<frac>> cont;
-};
-
